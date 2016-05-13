@@ -11,7 +11,7 @@
 
 ###4/8
 
-Note: Company and Account are essentially the same
+Note: Companies are labeled as 'Account' objects in the Salesforce backend.
 
 Creating a Related List of [Object 1] in [Object 2]
 e.g. Create a related list of campaign member objects of a certain company on that company's page
@@ -26,3 +26,12 @@ e.g. Create a related list of campaign member objects of a certain company on th
 - This seems complicated, but it's actually pretty intuitive
 
 After these steps, whenever a contact is added to a campaign and a campaign member object is created, the process will lookup the company ID, creating a relationship between the campaign member object and the company object.
+
+### 5/13
+- editing fields of a custom picklist:
+- Setup -> <parent_object> (i.e. Contact or Account or Opportunity) -> Custom Fields. Click on field of type Picklist to then view and edit list values.
+- permissions (visibility) for custom objects, as well as fields for custom and standard objects:
+- Manage Users -> Profiles -> object in question
+- permissions (access) for visualforce pages:
+- Develop -> Visualforce Pages -> 'security' -> select all account types and move them to the 'enabled' list.
+
